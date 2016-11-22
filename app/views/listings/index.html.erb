@@ -18,7 +18,7 @@
       <tr>
         <td><%= listing.title %></td>
         <td><%= listing.description %></td>
-        <td><%= listing.photo.name %></td>
+        <td><%= photo_tag listing.photo_url(:thumb) %></td>
         <td><%= listing.category.name %></td>
         <td><%= link_to 'Show', listing %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
