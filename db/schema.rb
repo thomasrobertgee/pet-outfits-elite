@@ -10,7 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161118003618) do
+ActiveRecord::Schema.define(version: 20161122005610) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "listings", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "title"
+    t.string   "description"
+    t.integer  "photo_id"
+    t.integer  "category_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["category_id"], name: "index_listings_on_category_id"
+    t.index ["photo_id"], name: "index_listings_on_photo_id"
+    t.index ["user_id"], name: "index_listings_on_user_id", unique: true
+  end
+
+  create_table "photos", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "asset_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_photos_on_user_id", unique: true
+  end
 
   create_table "profiles", force: :cascade do |t|
     t.integer  "user_id"
