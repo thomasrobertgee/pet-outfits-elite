@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20161122005610) do
     t.datetime "updated_at",  null: false
     t.index ["category_id"], name: "index_listings_on_category_id"
     t.index ["photo_id"], name: "index_listings_on_photo_id"
-    t.index ["user_id"], name: "index_listings_on_user_id", unique: true
+    t.index ["user_id"], name: "index_listings_on_user_id"
   end
 
   create_table "photos", force: :cascade do |t|
