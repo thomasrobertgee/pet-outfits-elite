@@ -120,7 +120,7 @@ Devise.setup do |config|
   # access will be blocked just in the third day. Default is 0.days, meaning
   # the user cannot access the website without confirming their account.
 
-  # config.allow_unconfirmed_access_for = 2.days
+  config.allow_unconfirmed_access_for = 20.days
 
   # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
