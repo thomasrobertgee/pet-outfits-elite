@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: thomasgee
+  api_key: '827172622162339'
+  api_secret: vu_lncAbros-8KoBpvbCqobHGJU
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: thomasgee
+  api_key: '827172622162339'
+  api_secret: vu_lncAbros-8KoBpvbCqobHGJU
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: thomasgee
+  api_key: '827172622162339'
+  api_secret: vu_lncAbros-8KoBpvbCqobHGJU
+  enhance_image_tag: true
+  static_image_support: false

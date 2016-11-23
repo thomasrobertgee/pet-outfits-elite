@@ -1,5 +1,10 @@
 <p id="notice"><%= notice %></p>
 
+<% unless @listing.avatar_url.nil? %>
+  <%= image_tag @listing.avatar_url(:profile_pic) %>
+  <br />
+<% end %>
+
 <p>
   <strong>Title:</strong>
   <%= @listing.title %>
@@ -8,11 +13,6 @@
 <p>
   <strong>Description:</strong>
   <%= @listing.description %>
-</p>
-
-<p>
-  <strong>Photo:</strong>
-  <%= @listing.photo.name %>
 </p>
 
 <p>

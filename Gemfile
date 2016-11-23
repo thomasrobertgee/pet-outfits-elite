@@ -30,6 +30,9 @@ gem 'devise'
 # gem 'delayed_job_active_record'
 gem 'mailgun_rails'
 
+gem 'carrierwave'
+gem 'cloudinary'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

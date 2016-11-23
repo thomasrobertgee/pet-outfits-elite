@@ -3,7 +3,9 @@ class Listing < ApplicationRecord
   validates_associated :user
   # belongs_to :category
   # validates_associated :category
-  has_many :photo
   belongs_to :category
   validates :category_id, presence: true
+  attr_accessor :avatar
+
+  mount_uploader :avatar, AvatarUploader
 end
