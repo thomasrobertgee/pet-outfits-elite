@@ -32,10 +32,8 @@ gem 'mailgun_rails'
 
 gem 'carrierwave'
 gem 'cloudinary'
-<<<<<<< HEAD
-=======
 gem 'simple_form'
->>>>>>> CSS
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
