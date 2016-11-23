@@ -1,4 +1,4 @@
-<%= simple_form_for(listing) do |f| %>
+<%= form_for(listing) do |f| %>
   <% if listing.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
@@ -21,14 +21,8 @@
     <%= f.text_field :description %>
   </div>
 
-<<<<<<< HEAD
   <legend>Avatar</legend>
     <%= f.file_field :avatar %>
-=======
-  <div class="form-inputs">
-    <%= f.input :photo, as: :file %>
-  </div>
->>>>>>> CSS
 
   <div class="field">
       <%= f.label :category %>
