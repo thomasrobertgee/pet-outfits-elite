@@ -18,11 +18,7 @@
       <tr>
         <td><%= listing.title %></td>
         <td><%= listing.description %></td>
-<<<<<<< HEAD
         <td><%= image_tag listing.avatar_url(:thumb) %><td>
-=======
-        <td><%= photo_tag listing.photo_url(:thumb) %></td>
->>>>>>> CSS
         <td><%= listing.category.name %></td>
         <td><%= link_to 'Show', listing %></td>
         <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
