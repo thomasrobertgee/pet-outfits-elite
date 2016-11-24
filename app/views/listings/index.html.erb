@@ -22,9 +22,15 @@
         <td><%= image_tag listing.avatar_url(:thumb) %><td>
         <td><%= listing.category.name %></td>
         <td>$<%= listing.price %></td>
+<<<<<<< HEAD
         <td><button type="button" class="btn btn-info btn-text"><%= link_to 'Show', listing %></button></td>
         <td><button type="button" class="btn btn-warning btn-text"><%= link_to 'Edit', edit_listing_path(listing) %></button></td>
         <td><button type="button" class="btn btn-danger btn-text"><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+=======
+        <td><%= link_to 'Show', listing, class: 'btn btn-primary btn-xs' %></td>
+        <td><%= link_to 'Edit', edit_listing_path(listing), class: 'btn btn-info btn-xs' %></td>
+        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
+>>>>>>> bf3029e824a6ec9abc73bc4fe9616b1338194d53
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +38,8 @@
 
 <br>
 
+<<<<<<< HEAD
 <button type="button" class="btn btn-success btn-lg btn-text"><%= link_to 'New Listing', new_listing_path %></button>
+=======
+<%= link_to 'New Listing', new_listing_path, class: 'btn btn-primary btn-xs' %>
+>>>>>>> bf3029e824a6ec9abc73bc4fe9616b1338194d53
