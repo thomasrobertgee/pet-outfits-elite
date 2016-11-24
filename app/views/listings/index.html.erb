@@ -22,9 +22,9 @@
         <td><%= image_tag listing.avatar_url(:thumb) %><td>
         <td><%= listing.category.name %></td>
         <td>$<%= listing.price %></td>
-        <td><%= link_to 'Show', listing %></td>
-        <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
-        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', listing, class: 'btn btn-primary btn-xs' %></td>
+        <td><%= link_to 'Edit', edit_listing_path(listing), class: 'btn btn-info btn-xs' %></td>
+        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Listing', new_listing_path %>
+<%= link_to 'New Listing', new_listing_path, class: 'btn btn-primary btn-xs' %>
