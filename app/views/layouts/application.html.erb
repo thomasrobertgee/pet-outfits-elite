@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PetOutfitsElite</title>
+    <title>Pet Outfits Elite |
+      <% if user_signed_in? %>
+        <%= current_user.profile.first_name %>
+        <% else %>
+        <%= 'Guest' %>
+        <% end %>
+     </title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>

@@ -1,4 +1,4 @@
-<div class="ui segment">
+<center><div class="ui segment">
  <h3>Mailbox</h3>
 
  <div class="ui list">
@@ -11,9 +11,12 @@
       <% recipient = User.find(conversation.sender_id) %>
     <% end %>
     <%= link_to recipient.profile.first_name,   conversation_messages_path(conversation) %>
+    <p>___</p>
    <% end %>
   <% end %>
+
   </div>
+
  </div>
 </div>
 
@@ -38,4 +41,4 @@
  <% end %>
  </div>
 
-</div>
+</div></center>
