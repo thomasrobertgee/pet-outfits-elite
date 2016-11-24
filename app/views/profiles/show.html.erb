@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<center><p id="notice"><%= notice %></p>
 
 <% unless @profile.avatar_url.nil? %>
   <%= image_tag @profile.avatar_url(:profile_pic) %>
@@ -27,3 +27,4 @@
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
 <%= link_to 'Back', root_url %>
+</center>

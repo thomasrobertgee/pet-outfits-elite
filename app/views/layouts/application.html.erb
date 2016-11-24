@@ -3,7 +3,7 @@
   <head>
     <title>Pet Outfits Elite |
       <% if user_signed_in? %>
-        <%= current_user.profile.first_name %>
+        <%= current_user.email %>
         <% else %>
         <%= 'Guest' %>
         <% end %>
