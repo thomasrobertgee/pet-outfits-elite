@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :conversations do
     resources :messages
   end
-  
+
+  resources :charges
   resources :categories
   resources :photos
   resources :listings

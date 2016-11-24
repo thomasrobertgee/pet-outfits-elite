@@ -33,6 +33,7 @@ gem 'mailgun_rails'
 gem 'carrierwave'
 gem 'cloudinary'
 gem 'simple_form'
+gem 'stripe'
 
 
 # Use Capistrano for deployment
