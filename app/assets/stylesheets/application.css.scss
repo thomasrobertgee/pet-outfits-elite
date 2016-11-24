@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+li {
+  text-align: center;
+}
+
+th {
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+}
+
+tr {
+  text-align: center;
+}

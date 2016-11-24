@@ -34,6 +34,7 @@ gem 'carrierwave'
 gem 'cloudinary'
 gem 'simple_form'
 gem 'stripe'
+gem 'bootstrap-sass', '~> 3.3.6'
 
 
 # Use Capistrano for deployment
