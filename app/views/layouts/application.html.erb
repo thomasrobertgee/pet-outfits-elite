@@ -3,7 +3,7 @@
   <head>
     <title>Pet Outfits Elite |
       <% if user_signed_in?%>
-        <%= current_user.profile.first_name %>
+        <%= current_user.email %>
         <% else %>
         <%= 'Guest' %>
         <% end %>
@@ -12,6 +12,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%=  stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Gudea' %>
   </head>
 
   <body>
@@ -56,7 +57,7 @@
   <% end %>
 </div>
 
-<%= yield :top_content %>
+<%= yield :home_content %>
 
 <div class="container">
     <h1><%= yield :header %></h1>
