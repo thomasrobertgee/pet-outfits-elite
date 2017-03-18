@@ -20,4 +20,19 @@ Functionality yet to be implemented includes:
 * Tests
 
 
+To test, do the following:
+
+1. Clone repo
+
+2. Ensure you have rails and ruby installed
+
+3. Go into main directory and run server with `rails s`
+
+4. Navigate to localhost:3000
+
+5. Login with email: `thomasrobertgee@gmail.com` and password: `password 
+
+Authentication is with Mailgun and only verified users can sign up.
+
+
 
